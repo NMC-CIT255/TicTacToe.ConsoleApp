@@ -1,0 +1,2752 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="2463fb02-599c-44f6-8f58-9c8d2e374902"
+  name="ConsoleApp"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="011c3eed-cc9e-4853-81a0-daa5b818dc2e"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DTicTacToe.ConsoleApp"
+      tag="ViewCode" />
+  </referencesInternal>
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="2d7d5dad-8dad-42ac-a7a4-29b97af83eb2">
+      <profileInstance
+        Id="32b64f60-7fd6-4e3b-bef2-f6867ff70082"
+        name="CSharpProfile" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <enumeration
+        Id="36c779a0-040f-41a4-9e98-febf2795145d"
+        name="GameStatus"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="4679478e-908b-4d17-a99b-4a253521cdeb"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3D(Name%3DGameStatus ParentType%3DGameboardModel)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="db6a4802-24b0-41b6-a2ff-847537097638"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2acfcbe1-73ea-4434-b0e1-18d061843ce9">
+                <propertyInstance
+                  Id="b27b026f-9dd3-441a-9e67-22bd180def9a"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d7495792-6a75-42f7-a372-6a4648751f7c">
+                <propertyInstance
+                  Id="dedcc775-10e6-4664-9977-b1a48abac23b"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="7f6759ae-a31f-443c-84ab-53086c6c5714">
+                <propertyInstance
+                  Id="bc16595f-f9ac-497f-9c01-aae243c36595"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="2e0d30db-99da-4964-841a-3d5f84e68acb"
+            name="NewGame">
+            <referencesInternal>
+              <reference
+                Id="aaa10e2d-c2ba-436a-94af-6578ac78f55e"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3D(Name%3DGameStatus ParentType%3DGameboardModel) Member%3DNewGame"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="fcd2ad6b-7002-4414-9eb1-b3e1220fbf27"
+            name="PlayerXTurn">
+            <referencesInternal>
+              <reference
+                Id="9f89ba98-a106-4c97-a72f-6a07de24ee0a"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3D(Name%3DGameStatus ParentType%3DGameboardModel) Member%3DPlayerXTurn"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="3d7a6df6-2754-4a9d-b82f-543753cb0bda"
+            name="PlayerOTurn">
+            <referencesInternal>
+              <reference
+                Id="5c0c8265-f1f7-4452-919f-910f754cf7a8"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3D(Name%3DGameStatus ParentType%3DGameboardModel) Member%3DPlayerOTurn"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="0d31137f-5caf-475e-8af9-68891638e9da"
+            name="PlayerXWin">
+            <referencesInternal>
+              <reference
+                Id="75c452e6-afe3-4c44-8c0f-c58b65dd4417"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3D(Name%3DGameStatus ParentType%3DGameboardModel) Member%3DPlayerXWin"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="ad4225a1-4985-4bc9-962b-d4277f404d2a"
+            name="PlayerOWin">
+            <referencesInternal>
+              <reference
+                Id="fbe2e348-8fb8-4b81-a603-8a20168d8728"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3D(Name%3DGameStatus ParentType%3DGameboardModel) Member%3DPlayerOWin"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="d7477a08-382f-41eb-8b86-f10abe9f2a3c"
+            name="CatsGame">
+            <referencesInternal>
+              <reference
+                Id="fa67e0dc-6433-48d3-9d17-ea157d0a7e71"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3D(Name%3DGameStatus ParentType%3DGameboardModel) Member%3DCatsGame"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="f2a47e08-30be-45f5-9d17-5001e40b41ff"
+        name="PlayerPiece"
+        isAbstract="false"
+        isLeaf="false">
+        <referencesInternal>
+          <reference
+            Id="b1a4587c-2658-4f52-9dc0-fb93cee8a4da"
+            handle="viewcode://./CodeSchema_Enum?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3D(Name%3DPlayerPiece ParentType%3DGameboardModel)"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="daf855c5-b9be-44a6-b8a4-28c76bdf7d56"
+            name="enum"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="0b0dd94e-09df-4418-a5f4-02a4831598ba">
+                <propertyInstance
+                  Id="2af2d8ac-130a-4299-bb5e-54d7a72907c3"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3267751a-390a-4061-88d4-cc1ad235c261">
+                <propertyInstance
+                  Id="4612e973-0ed2-4158-a1fb-d7088acdcdb3"
+                  name="BaseType"
+                  value="int" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="15bf935a-11e3-4105-9887-fed8ec915822">
+                <propertyInstance
+                  Id="42539276-59cb-4c81-8626-db3ca1a4e4ae"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedLiterals>
+          <enumerationLiteral
+            Id="13df0310-e388-4659-a1df-3fcaf617716f"
+            name="X">
+            <referencesInternal>
+              <reference
+                Id="bcef493d-94bf-42bc-934c-f5461f72d57c"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3D(Name%3DPlayerPiece ParentType%3DGameboardModel) Member%3DX"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="666ef086-b1fb-4350-a635-11194c0e6062"
+            name="O">
+            <referencesInternal>
+              <reference
+                Id="bdeb8394-5677-4713-9dd9-7dd531a1a472"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3D(Name%3DPlayerPiece ParentType%3DGameboardModel) Member%3DO"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+          <enumerationLiteral
+            Id="584e6023-2802-47ee-be11-91d00dce6c38"
+            name="None">
+            <referencesInternal>
+              <reference
+                Id="c2e14a99-9f13-4255-9f68-92a6c239a074"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3D(Name%3DPlayerPiece ParentType%3DGameboardModel) Member%3DNone"
+                tag="ViewCode" />
+            </referencesInternal>
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="3c0a1b52-0939-4069-b15d-52bb53ebc44a"
+        name="ConsoleController"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="6da5258c-fedf-4b50-815d-0e40b08d9b5e"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DConsoleController"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="9f2ae162-3109-4650-b2c7-493a5c5167c9"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="8f8cf6a8-a169-458c-86b5-536db4837284">
+                <propertyInstance
+                  Id="7127ca4f-9966-4e09-9ce6-1a9e9ad20de7"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d62f309d-8f98-4c8a-9759-b73a1be52114">
+                <propertyInstance
+                  Id="436286cf-fbf0-4fef-950b-f462d8c09168"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="9db7a125-6e3e-452b-acd5-05711ffcb76d">
+                <propertyInstance
+                  Id="0c1edd8b-d540-4b26-ba87-17e180d984a0"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="fb161010-db66-411c-a3ba-b7bfeb872e38">
+                <propertyInstance
+                  Id="9f178c2e-f719-49e9-9645-fab09062f65b"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4116ad0f-fc10-4995-8ff6-1e92a46e636c">
+                <propertyInstance
+                  Id="1813611d-16a1-493d-8277-c938b51330a0"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="cdad495f-0a40-49ed-9232-6b636bf3af00"
+            name="PlayGame"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="593e4c97-8b81-42a2-8c40-f76d6842dcbb"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DConsoleController Member%3D(Name%3DPlayGame OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DGameboardModel)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DConsoleView)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="4f0f8382-39ad-468c-8326-842c34d5296e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="64a95996-435e-4254-95ab-5d3dbae5b17f">
+                    <propertyInstance
+                      Id="62fd64be-e500-4cfc-81e0-64df24507677"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="57f823bb-3376-49bc-9e10-4e3e4991f2f9">
+                    <propertyInstance
+                      Id="aa5c9401-dd4f-4440-aa17-37789db51bd6"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="39743433-a9dc-40b7-940c-5a27bb39504a">
+                    <propertyInstance
+                      Id="37b34f9b-7c88-4be1-9be6-2986620ff7ae"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aa6301e4-7420-408e-b197-a465dbfedb8f">
+                    <propertyInstance
+                      Id="e94edfc9-7ae9-44d5-bd2d-8cf8b0ca606a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c208b620-f6ea-400f-ad18-b897cfb2ccf5">
+                    <propertyInstance
+                      Id="ced447be-9725-4d3d-8478-ff921106f7b4"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e15e22a0-62eb-47af-b049-48729264b58b">
+                    <propertyInstance
+                      Id="2a1134f1-afae-496a-bd68-178ce8c7387d"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8268641b-1049-4d6a-b2d1-1e1908addf12"
+                  name="gameboard"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="c5a27434-cd98-4aaf-88f5-072efc57bf65"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DConsoleController Member%3D(Name%3DPlayGame OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DGameboardModel)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DConsoleView)]) ParameterIdentifier%3Dgameboard"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ea6c2817-ac4b-46f7-b28d-763452b9a49f"
+                      LastKnownName="GameboardModel"
+                      LastKnownLocation="Package1_1651.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="098e2a84-4672-4450-a4b8-b67cd885365e"
+                  name="view"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="3ab6a74a-31f7-430f-8ee6-1414e3cba698"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DConsoleController Member%3D(Name%3DPlayGame OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DGameboardModel)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DConsoleView)]) ParameterIdentifier%3Dview"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="f798da23-cc01-4cbe-a98b-284e2aff8635"
+                      LastKnownName="ConsoleView"
+                      LastKnownLocation="Package1_1651.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="749413a0-0699-499a-b957-549f01a17f9d"
+            name="SetGameboardStatus"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="2a458c65-761f-4aee-9156-5054cc7fc372"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DConsoleController Member%3D(Name%3DSetGameboardStatus OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DGameboardModel)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="6ce0e593-9463-4b08-a1fc-cc513e2e9f8d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f52d0d1b-5aed-4bb1-8216-b70a306533c1">
+                    <propertyInstance
+                      Id="6bda023a-d58d-492e-a202-e78e408d2c3f"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dacce676-ed1e-426c-8b01-f034225e02eb">
+                    <propertyInstance
+                      Id="8ecc446c-b8f4-4bb9-a2d0-9456af2f280e"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="685aa2e4-348c-4969-b217-1a7685671b47">
+                    <propertyInstance
+                      Id="34cf47e8-0d6c-460c-beb9-2c70bff438d4"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac24eb93-9bb5-49f5-a43f-aea121c270aa">
+                    <propertyInstance
+                      Id="8109fcea-2981-44eb-83ae-7dab9db3804a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3f9affad-cd29-4f3c-8328-528bfa8333ee">
+                    <propertyInstance
+                      Id="e86839b5-8b9b-4c6b-beeb-2f49f767afd7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cfb45161-03df-4aa1-acb6-48e4da7530df">
+                    <propertyInstance
+                      Id="e5cc3b9a-b984-4bed-ab6d-932fcd55ba00"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fa8e0b6a-65dc-42ad-8781-142e831b46e7"
+                  name="gameboard"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="24211dd7-dac5-439a-affd-f21e17f3ed06"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DConsoleController Member%3D(Name%3DSetGameboardStatus OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DGameboardModel)]) ParameterIdentifier%3Dgameboard"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ea6c2817-ac4b-46f7-b28d-763452b9a49f"
+                      LastKnownName="GameboardModel"
+                      LastKnownLocation="Package1_1651.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0751e3f8-a1d1-4106-b5cd-18a3a42cd28b"
+            name="ConsoleController"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1a194a22-e796-47bd-954f-404416dcdc07"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DConsoleController Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="b9dc9d52-e017-4dfc-b9cf-e13311d5a935"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="da9fe483-d227-4c5e-8863-7860a086162b">
+                    <propertyInstance
+                      Id="f7ba20f4-e3d8-4a73-bd0b-635a004f2d3d"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9820623d-7e7a-4d28-847f-bf7453a28b24">
+                    <propertyInstance
+                      Id="838db89d-7305-4f97-b83a-2cdf6f8f618a"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a76d08a7-9d43-4c70-a10a-c6b51ed6bf0e">
+                    <propertyInstance
+                      Id="1c187774-033a-41fe-a3ef-ea1170e224c1"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="04e9d456-4e36-4de0-8827-f4b961879583">
+                    <propertyInstance
+                      Id="30d0e4a6-8aa9-4287-b83c-e17ae7c54f8b"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0876de42-5476-4d7f-b077-855560a3278a">
+                    <propertyInstance
+                      Id="09c912ac-6062-4843-a0d6-f5318b85eee9"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4cc7e35e-f637-4c11-baf5-3f8adbbb70e4">
+                    <propertyInstance
+                      Id="17141a07-b71b-4811-8870-3cb0adde9d11"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ea6c2817-ac4b-46f7-b28d-763452b9a49f"
+        name="GameboardModel"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="a408a530-1ae8-418e-8732-405b27c4a019"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DGameboardModel"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="131f1e29-5f5d-4d73-859b-6dc983b0920a"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="47602f3e-6ace-4197-98d3-309481e8f845">
+                <propertyInstance
+                  Id="ae1d89eb-8170-4534-a113-7a349bf0a0f1"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="b946ccd1-8471-43a2-877b-e5da67102c76">
+                <propertyInstance
+                  Id="77eec50f-5b7c-4bbb-a5c0-d0ba2153b943"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="35a91070-f8d4-4297-bb11-94b451d9c8ff">
+                <propertyInstance
+                  Id="8eb44fbe-1ed4-4416-9994-b155cfebd0b7"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="84702c52-1190-458d-8a37-33d39af9421a">
+                <propertyInstance
+                  Id="ef0a9fb9-9693-49a1-9062-51cef71d16f3"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="89fe9183-421e-462c-ac6c-ba03ddfd4709">
+                <propertyInstance
+                  Id="ee262748-cc57-4669-8e11-26fdd080b564"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <targetEnds>
+          <association
+            Id="682a4c91-5d83-400b-9e06-6e355b2e319f"
+            isDerived="false"
+            sourceEndRoleName="GameboardModel"
+            targetEndRoleName="CurrentGameStatus"
+            isLeaf="false"
+            isAbstract="false">
+            <enumerationMoniker
+              Id="36c779a0-040f-41a4-9e98-febf2795145d"
+              LastKnownName="GameStatus"
+              LastKnownLocation="Package1_1651.uml" />
+            <description>Property CurrentGameStatus references type GameStatus.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1491839f-a80f-41ac-b4de-93cd1576a9f2"
+                  name="GameboardModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="52290084-54f0-4d41-be30-c665cc165f6c"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="ab4543bd-53a9-40dd-9259-596025be3ba7"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="d2dec19e-205c-420a-ac13-543eba015a91"
+                  name="CurrentGameStatus"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="05294bdc-ff65-42c6-9cf9-c3b869847c91"
+                      name="Lower"
+                      value="1" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="504f2449-eceb-4d9b-a4c1-00c1a7f63f24"
+                      name="Upper"
+                      value="1" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="05c3a723-f7c9-4ca4-8c18-51d4dcf90e91"
+            isDerived="false"
+            sourceEndRoleName="GameboardModel"
+            targetEndRoleName="PositionStatus"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="397bbc5e-0888-41ef-af7e-b7ad1cf71896"
+              LastKnownName="PlayerPiece"
+              LastKnownLocation="Package1_1651.uml" />
+            <description>Property PositionStatus references type PlayerPiece.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b8891dfb-809a-46a7-ba53-c4180a0a1357"
+                  name="GameboardModel"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9a6cb456-1985-4a1c-99c8-c63cd416946e"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="e9c3031d-a51f-4c71-a0f0-fd9b988bdfdb"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="848a7a6e-73ca-4993-ab9f-a0befa58e863"
+                  name="PositionStatus"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isOrdered="true"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="40d372e8-9740-4a1e-b7f1-bbcf5abf7307"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="639be751-1697-4f63-a575-988d58a498c2"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="5f8cc41e-15bf-4f85-8061-89cfcdbc85f8"
+            name="CurrentGameStatus"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="a736bba9-5c1c-4a24-b157-1391edda74ef"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DGameboardModel Member%3DCurrentGameStatus"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="d1c1a3d3-51b9-4fd3-b52e-62719e327ca7"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ae990bf5-b6e9-4be5-9236-01fa9bac228b">
+                    <propertyInstance
+                      Id="3b425b56-d83c-42c6-bdbe-2cff2fe43582"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10b01b72-762b-48e3-8129-bc4ae444e08f">
+                    <propertyInstance
+                      Id="2c3357ca-baa3-40d3-ac38-3ffa0f035ad1"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="31db925a-dcb7-44bc-b112-ef745f7e800d">
+                    <propertyInstance
+                      Id="fdd62a45-0475-4c96-be8e-401c7f02b12a"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3fc0861a-a7e9-48d9-b24d-81823a90040a">
+                    <propertyInstance
+                      Id="ff9bdb4f-7264-49f6-ab5e-06eecaf30c98"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="59daabbc-d745-46e2-98f8-ce46c711f5cd">
+                    <propertyInstance
+                      Id="cac78c77-3593-4759-8e0a-ef43d80c9086"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6d7dd5b0-4a43-47c2-be0f-5032d21f17dd">
+                    <propertyInstance
+                      Id="228d4338-c26d-47fc-98f0-13eaf07d90e3"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="66366006-bfb8-4479-830c-d4f842475543">
+                    <propertyInstance
+                      Id="b1fffd31-dfb9-4cd1-bb8d-f8779f6779b8"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="36c779a0-040f-41a4-9e98-febf2795145d"
+                LastKnownName="GameStatus"
+                LastKnownLocation="Package1_1651.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="1aed49f3-dfe7-49d3-9868-657323408472"
+            name="PositionStatus"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isOrdered="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c42e2336-7931-44d3-a475-50fbd7255505"
+                handle="viewcode://./CodeSchema_Property?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DGameboardModel Member%3DPositionStatus"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="04b93eef-4742-4746-a550-47d92fa213b5"
+                name="property"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3fff7fb0-d167-4664-b94d-418dd4a8e5b7">
+                    <propertyInstance
+                      Id="914e534c-22f9-4b42-aa17-d50623d58d22"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0b7300d9-b39f-421b-9eb0-0b0f828dec6f">
+                    <propertyInstance
+                      Id="f9649d66-3c2b-4149-a18f-47bd18c237d5"
+                      name="Get"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc1197f1-5b2f-4182-a811-f30d185ac9e1">
+                    <propertyInstance
+                      Id="441d67c6-86d5-46a2-be8b-fc46f0db485c"
+                      name="HasBody"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d94fbb8f-d24b-4998-a420-f7bacdc99725">
+                    <propertyInstance
+                      Id="fd1cc569-1bb7-4993-a0da-b7aa53268f6a"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d066bec0-01d6-41ca-a0d9-a2cd919ad3db">
+                    <propertyInstance
+                      Id="d73b75c4-fd12-4b5d-a762-6108254ab3d8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="442032b1-e365-474c-bcfc-dbb7e225a908">
+                    <propertyInstance
+                      Id="eaece598-c052-4925-b541-94b08166b58a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d21f25e0-cf9e-4496-b7da-2dec8771c27f">
+                    <propertyInstance
+                      Id="7e6e9f51-b6d7-4809-a4ba-395fdb74e714"
+                      name="Set"
+                      value="public" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString
+                Id="759f2954-57f8-4be2-9e0b-107eaa29e9b4"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="3e894e75-715e-4633-b20e-983a31f8b91e"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="397bbc5e-0888-41ef-af7e-b7ad1cf71896"
+                LastKnownName="PlayerPiece"
+                LastKnownLocation="Package1_1651.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="b7a9eb8d-98d3-4aed-a227-65ea733fe533"
+            name="_positionStatus"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isOrdered="true"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="30d1c75f-177b-4006-89f7-62427f77af3b"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DGameboardModel Member%3D_positionStatus"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fe8015fc-c573-4a83-9895-c07fff4e6622"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a38e1ce6-a200-4633-9d57-0bb3fbd5f510">
+                    <propertyInstance
+                      Id="f9c52b29-5811-4094-877a-c671ff74d3cd"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="be9b515e-0ed5-4339-8d71-13f7682e962f">
+                    <propertyInstance
+                      Id="5d8c02af-91e7-403e-8d2b-58d5f01a5d80"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="31b0e6c5-9e33-4cfa-8dcc-97fe2e400daa">
+                    <propertyInstance
+                      Id="3873f725-1e3d-4870-8e2c-a17f0a3e8ba7"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0989d368-db26-45c4-be6e-1dd1f0c199bd">
+                    <propertyInstance
+                      Id="88846d26-c1f5-47db-8ec7-eaff24d0a6e8"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="635a77fc-6854-446a-8981-fae363393d75">
+                    <propertyInstance
+                      Id="6a0bc975-2f8d-4a8c-9c0d-45c9eb637ac6"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <lowerValueInternal>
+              <literalString
+                Id="643101e4-a8f9-4d5d-a7c6-535d6e8c68cc"
+                name="Lower"
+                value="*" />
+            </lowerValueInternal>
+            <upperValueInternal>
+              <literalString
+                Id="f8287144-2ac2-469b-a2ba-860021de487d"
+                name="Upper"
+                value="*" />
+            </upperValueInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="397bbc5e-0888-41ef-af7e-b7ad1cf71896"
+                LastKnownName="PlayerPiece"
+                LastKnownLocation="Package1_1651.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="53e2c33e-9198-4f8c-b96f-03f37b21ab18"
+            name="_currentGameStatus"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="c4f9244b-d9e6-430d-a332-abd2177a939d"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DGameboardModel Member%3D_currentGameStatus"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fadf2ede-eace-4c68-a71a-14ea9023dcd5"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="28563e57-1535-40cc-92ee-a3336af0c3c9">
+                    <propertyInstance
+                      Id="9cf48043-7721-4a57-a381-8e85e96cb35c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="83bdd559-2d87-47ad-87db-4d1e55f4c517">
+                    <propertyInstance
+                      Id="128a9564-0072-4fb0-b509-9f07d7f0e9f3"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="551b1490-b5f7-4a8d-9591-dfafcb27f757">
+                    <propertyInstance
+                      Id="1a8960fe-e6f0-4fdf-896e-f4c5577d3409"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="218c0d75-9cb2-4bbc-ba13-9678c1a3f7af">
+                    <propertyInstance
+                      Id="2ab9679f-9d86-41c2-adb6-a8be375d1627"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5db90af2-7940-42dc-acdb-e5cbde594871">
+                    <propertyInstance
+                      Id="09952724-8d26-4fd8-9118-e445a91c7060"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <enumerationMoniker
+                Id="36c779a0-040f-41a4-9e98-febf2795145d"
+                LastKnownName="GameStatus"
+                LastKnownLocation="Package1_1651.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="23538525-0cdc-4512-acb2-223b1b59a8b1"
+            name="GameboardModel"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="1043ab45-cb76-4db3-9593-464dde8cced6"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DGameboardModel Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="2a9b1da7-07b5-489b-954b-c1ccf20d984b"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="05ced83c-fd71-402e-b0b1-23bcd4ce067e">
+                    <propertyInstance
+                      Id="57bce322-dfaa-40f0-b03b-8e4f66215eb5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="77ddc83f-4be7-4606-ba7e-752cf5c39238">
+                    <propertyInstance
+                      Id="d0f2f682-9070-4a0b-8c82-86b49d57dbc9"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1aa72225-97ca-466d-87b1-9f516fbff47c">
+                    <propertyInstance
+                      Id="c2c502e9-88a8-436c-aebe-d11a26e35b76"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2888a0e5-7653-4bbd-b391-b41916add129">
+                    <propertyInstance
+                      Id="b7b781e1-f275-4ff9-a524-bb1b3bc306b7"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="58fc13ef-083a-45d5-92c9-196db327589a">
+                    <propertyInstance
+                      Id="5cfff815-c593-473c-95ce-ca9d4713e432"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ba7e5c3-828b-4397-9d4a-321bbd504249">
+                    <propertyInstance
+                      Id="499c31d6-247e-4748-9dda-2672f69636e2"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="1c47052c-cfac-4aa1-b361-c4b4cac84e5e"
+            name="IsValidMove"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="f48cddc8-9a6b-43cf-935d-6f368560b976"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DGameboardModel Member%3D(Name%3DIsValidMove OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="32ab5cd7-19b5-4234-a05f-808d5679c782"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1cac6b1a-1a7d-42bc-a033-9984a838ebed">
+                    <propertyInstance
+                      Id="6f8570a5-207a-403a-890f-9705c6f843bf"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="10608b7c-c6e0-488a-b979-6b25a3baead5">
+                    <propertyInstance
+                      Id="b983e3af-5cb5-4ce8-bb80-029fa1602acd"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d7b0d553-a8d6-4be4-ba57-56247c3d6c7c">
+                    <propertyInstance
+                      Id="e2ffc19c-8220-4c25-b3be-6418c19d7e7b"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7baa9bfe-646f-4519-9c9c-02f78be385fd">
+                    <propertyInstance
+                      Id="c4db8915-2c5e-4d6e-bebc-d74244b120dc"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8af2ce26-827c-4e35-829d-632d1707029e">
+                    <propertyInstance
+                      Id="a4d76fc1-2385-441a-8479-b245aa484efb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a256bad5-e739-4bc3-b4ab-2924764f8986">
+                    <propertyInstance
+                      Id="2c48c409-7007-46d3-96de-099cdc902f91"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d21e42c6-84b8-4892-9ac3-609c7e1cbdc0"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectExample.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="600e5096-5306-4b97-98c8-77d239a14d45"
+                  name="row"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="f30a1804-7139-4e3e-b18f-f5fabe58e5b4"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DGameboardModel Member%3D(Name%3DIsValidMove OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Drow"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectExample.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="c5190c89-5111-43fa-a07e-c4545ec267f0"
+                  name="col"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="6a41bd71-2304-457a-b5ba-dbf364712f89"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DGameboardModel Member%3D(Name%3DIsValidMove OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3Dcol"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectExample.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="156b2705-fc02-4fb2-836c-ab4a2d237ea8"
+            name="SetPlayerPiece"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="77ca1485-dd54-4bac-974d-48453afef20a"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DGameboardModel Member%3D(Name%3DSetPlayerPiece OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3D(Name%3DPlayerPiece ParentType%3DGameboardModel))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="9011ebb9-dc82-4135-b119-e29cc9429faf"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="18c5f204-9047-4086-81b2-57d99241884d">
+                    <propertyInstance
+                      Id="7351ebb6-949e-4b9d-b3bc-4aa70151d7a5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="526c6857-6b69-48c3-a6c8-62e709348ebf">
+                    <propertyInstance
+                      Id="47c944af-3a6d-4389-9f5e-f244358c101c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ead60668-7655-4ede-891b-63ca5592ddd2">
+                    <propertyInstance
+                      Id="51e25d77-f5dc-49db-9117-e0e7663874ce"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="88710fb4-eee8-472b-8a6b-5df7e2aca2f2">
+                    <propertyInstance
+                      Id="011227df-e1cf-4706-aac8-8fb05ce74666"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fbc632cf-749f-4d58-b2b5-a511a6fffab5">
+                    <propertyInstance
+                      Id="0700a2cc-d10c-4088-b1c0-3fb827e1a728"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="96c2f2d4-499c-4f1a-a568-b483908797c3">
+                    <propertyInstance
+                      Id="56818a62-6e60-4c31-8070-91121d5efbcc"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="65138b82-daa0-4763-b927-2fc66f59454b"
+                  name="row"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="8040489f-d08b-4c79-860e-a0781b2f8110"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DGameboardModel Member%3D(Name%3DSetPlayerPiece OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3D(Name%3DPlayerPiece ParentType%3DGameboardModel))]) ParameterIdentifier%3Drow"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectExample.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="858181c3-88ad-463e-b469-7421a4b2e56a"
+                  name="col"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="bed4553a-aaab-41c3-a104-151c7c8f0567"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DGameboardModel Member%3D(Name%3DSetPlayerPiece OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3D(Name%3DPlayerPiece ParentType%3DGameboardModel))]) ParameterIdentifier%3Dcol"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectExample.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="d2323cad-6fa4-41df-8bff-d1721f23d355"
+                  name="PlayerPiece"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="e01ac92d-6d15-452a-a51a-e2184b5c97a3"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DGameboardModel Member%3D(Name%3DSetPlayerPiece OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3D(Name%3DPlayerPiece ParentType%3DGameboardModel))]) ParameterIdentifier%3DPlayerPiece"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="f2a47e08-30be-45f5-9d17-5001e40b41ff"
+                      LastKnownName="PlayerPiece"
+                      LastKnownLocation="Package1_1651.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="4ffaa3ed-127e-4a52-a8c6-40e23cebf5ab"
+            name="IsCatsGame"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="84c6a0de-36e0-4d8c-922e-fd72f7a3c0ff"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DGameboardModel Member%3DIsCatsGame"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="a6781d96-e391-4f1a-965d-624066fa4b79"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="3be05815-6394-4a05-9428-ba113e286392">
+                    <propertyInstance
+                      Id="0ccaef2d-9c8e-4402-a89a-1dc5981dd0b5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5def280-7413-4e42-9d18-9e0b8dfc0350">
+                    <propertyInstance
+                      Id="4c395bef-ca7d-416e-a9a8-6d36f9f29447"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fc30250a-287b-49d0-9b46-0806140a4aa2">
+                    <propertyInstance
+                      Id="80a03057-5991-43bb-a9d1-2dc13d194341"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b4484efe-fa3b-4ad9-a6fc-beeb44dd3efd">
+                    <propertyInstance
+                      Id="e542f61b-c65e-43f3-b979-0f8238e3abf9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="598a8fe0-229c-4d8e-8fdd-105f9d5c3dd0">
+                    <propertyInstance
+                      Id="2e657266-9c61-42a8-bc35-6296fc1d63d2"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="aefa4810-7c90-46c0-bbf5-5365537ec713">
+                    <propertyInstance
+                      Id="ef4bccaa-d138-4459-9490-b6b6928fa7b1"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a83688f5-6409-40b1-b2a2-8af22aecae21"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+                      LastKnownName="Boolean"
+                      LastKnownLocation="ModelingProjectExample.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3615cb78-8b6a-4ce6-b1a8-fb791a30b21d"
+            name="InitializeGameboard"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="37c635fe-7f5b-4f28-a0c2-eef2fc5779ff"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DGameboardModel Member%3DInitializeGameboard"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="1db17817-9526-4929-97fe-cb145f806a06"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b55cc3b4-85dc-45a6-91c4-3809e11d2e25">
+                    <propertyInstance
+                      Id="c104f8d3-30af-4b0a-bef2-639c194474d8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="6a0ddcc5-8137-4e2c-9b44-9ec962a84d21">
+                    <propertyInstance
+                      Id="887a8bf9-33c1-440c-94c1-baf58a369841"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="07fb18ac-7de5-4907-918f-a0268f455baf">
+                    <propertyInstance
+                      Id="bc882368-a198-43d9-a530-02022fe51f15"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="514c4058-4819-4460-9f1b-78e08745eb64">
+                    <propertyInstance
+                      Id="9ad52c95-d6dd-426a-b7cb-999dbc84ea32"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a29c210a-64af-458e-842b-661ec47f8d96">
+                    <propertyInstance
+                      Id="096577b6-66ee-40e8-8f7c-dc39cce5cfeb"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2cb1d527-5a61-4497-b6d8-6a7f4f8ea453">
+                    <propertyInstance
+                      Id="6280132f-2528-4c9a-b0f9-2c7d2929be2b"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="e7d10004-b6e9-4503-9c8d-860bdb47e208"
+            name="UpdateGameboardStatus"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="09c8837a-52d7-463f-9656-c93d723af8e9"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DGameboardModel Member%3DUpdateGameboardStatus"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c4017f79-1dc3-471b-883c-ad40032a1d55"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2383006b-135f-4487-a2f9-aa4d9543b346">
+                    <propertyInstance
+                      Id="a69ad972-57ad-4578-9fb5-7a7204db2d0e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9111929-da54-418c-a92f-2ca7106ea0f9">
+                    <propertyInstance
+                      Id="d0e87766-e438-4be7-ad43-9d8b64403677"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="4233a947-0fc7-45e9-a240-5581be7b9849">
+                    <propertyInstance
+                      Id="3f8e70da-a18f-4321-b266-55993cd5eca9"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e9bdf48b-8b48-4f0e-bc8e-c3a3a1b03250">
+                    <propertyInstance
+                      Id="a606e3af-8742-46cd-8d9f-abdb899a3a81"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="120c1f9d-965f-4725-af72-872df0620ca7">
+                    <propertyInstance
+                      Id="62608427-6ed8-4d78-be38-debe2e7e8bc1"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ed8af6dc-04db-4aa1-8ca0-8e5d4116f800">
+                    <propertyInstance
+                      Id="369e6caf-3971-4cc9-9564-1f0b15579bb8"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="6af253ad-02b6-4e65-9eed-97c4b810526d"
+            name="ThreeInARow"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="c5e83f7c-178d-443a-9ac2-9b1d80ee1bdc"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DGameboardModel Member%3DThreeInARow"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="cc255017-d49d-4c4c-a048-54d1b96d1371"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b64d5293-4aad-4825-b914-aab34910e89e">
+                    <propertyInstance
+                      Id="b6547caf-cf6e-4ef4-8ab6-49bcca5d144e"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0d59e86c-3a77-4566-88b7-2bebdeccded8">
+                    <propertyInstance
+                      Id="760a2f9b-c7e0-4651-864b-09f1a84a248c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac7ec44e-fb7c-4347-a715-aabd9bc9df6c">
+                    <propertyInstance
+                      Id="cad04857-5fb5-477d-bad1-44d03506fc09"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="821b5bdc-434f-4417-8a06-f63706c83098">
+                    <propertyInstance
+                      Id="ea450f81-7a08-4d63-a64d-7ee19ad04af9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0914fb7c-7336-4382-bbba-19b5d6f33fec">
+                    <propertyInstance
+                      Id="547c9d5f-3883-4646-9588-d71e893f262e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5bbd6621-8d7a-41fd-8f10-129a4ffdae21">
+                    <propertyInstance
+                      Id="5ad884df-c5ba-446f-b373-d6925e0522ba"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="3c263438-bec3-48eb-812d-707f3f9e8361"
+                  direction="Return">
+                  <type_NamedElement>
+                    <enumerationMoniker
+                      Id="f2a47e08-30be-45f5-9d17-5001e40b41ff"
+                      LastKnownName="PlayerPiece"
+                      LastKnownLocation="Package1_1651.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f798da23-cc01-4cbe-a98b-284e2aff8635"
+        name="ConsoleView"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="2e9c5918-7504-4b14-8b76-1c6288c4a1cd"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DConsoleView"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="5c953295-a522-4f3e-be8f-f80a2706fe4b"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6294dcd5-91fd-4168-bdc8-39b211eb0e7c">
+                <propertyInstance
+                  Id="d4a9485e-610f-4ad1-a797-0f9123ebf201"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="c18582fe-247e-4ef5-8b09-2562cc55c78d">
+                <propertyInstance
+                  Id="77a0cda9-3322-4623-bc62-26466cb95fa1"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="91a0323a-e004-4bfb-a024-abacabbba388">
+                <propertyInstance
+                  Id="81a886df-8aa4-4702-988f-fc58e9d73b83"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3a4d06b5-bb8d-45f9-a9e4-838201651a21">
+                <propertyInstance
+                  Id="48252f0d-f32d-43ab-b069-a684e9ecc9ee"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3905dd4b-7009-436c-980a-59fd9b054e4c">
+                <propertyInstance
+                  Id="8e705658-d6e4-49dd-8293-c5ce2003a5d0"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="e41947c1-c201-4c90-bee0-3326586e2734"
+            name="_topLeftRow"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="71a9e5c5-88ea-4041-a18a-589ec6a0c366"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DConsoleView Member%3D_topLeftRow"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="37bf4ba9-f895-461c-aae9-91b70a2a5f30"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b86c5d4d-05d7-4aa0-a8bf-a1d709d42338">
+                    <propertyInstance
+                      Id="65a21cdd-dd9e-49b2-8182-27dd5767307c"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a253bb2-36dd-4e62-9999-7a0d3ef87b1e">
+                    <propertyInstance
+                      Id="eebf0991-e702-45c3-abc1-c82896edb08c"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="35171934-d2ff-4216-8999-4156685c063a">
+                    <propertyInstance
+                      Id="dd2357c6-fdfc-493f-a235-4f872e8fb030"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="485a674c-715c-41b8-a696-ffc6ef3279bb">
+                    <propertyInstance
+                      Id="320e5116-3df9-4a34-bb78-5ce3c247a033"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1ab5d9a2-810c-4d3f-b8fd-68a6c5b40e58">
+                    <propertyInstance
+                      Id="31975a93-ee73-4286-b202-b1c218dc457a"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProjectExample.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="24cb59ee-9b12-40d6-b924-e467bda13069"
+            name="_topLeftCol"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="66c007f8-b1cf-4411-969a-1b245514362f"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DConsoleView Member%3D_topLeftCol"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="e1cfecee-cb3f-429e-8e25-8092c6063b19"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="633cc8a7-9795-43cd-b86c-025d33adea44">
+                    <propertyInstance
+                      Id="43435194-b4c5-40ed-93fc-9f5b06194a52"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ce083e09-08d5-48ff-bded-880d209badf3">
+                    <propertyInstance
+                      Id="e83da846-f09d-4805-ab17-03431bc13cc5"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="363fa8ca-c6c0-4932-b4d3-91ab8e025a61">
+                    <propertyInstance
+                      Id="9dd38d5d-f142-4c48-926b-f1c18e3200e0"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5ee7f580-e555-4333-8790-926156dd058b">
+                    <propertyInstance
+                      Id="bc06dc5a-13ea-4553-ae56-ca3f5a74eaa4"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="24924f24-2e52-479d-84fc-f8e4a5b82a66">
+                    <propertyInstance
+                      Id="81ce7b11-3c29-4b18-850e-889b0d63aa4e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <primitiveTypeMoniker
+                Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                LastKnownName="Integer"
+                LastKnownLocation="ModelingProjectExample.uml" />
+            </type_NamedElement>
+          </property>
+          <property
+            Id="ea745d57-853b-41e5-ae7a-18d4bfa754ad"
+            name="_gameboard"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false">
+            <referencesInternal>
+              <reference
+                Id="49731ff5-adf9-4546-9510-918970a23980"
+                handle="viewcode://./CodeSchema_Field?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DConsoleView Member%3D_gameboard"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="94eae7dd-511c-4d1f-ae33-e1d87fe3ca8c"
+                name="field"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ea233d2c-cf4f-48b7-bddb-04261dbc9c77">
+                    <propertyInstance
+                      Id="bcff6b68-51b9-4043-b05d-ce55755505c6"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d9dbe549-7f4e-4a0c-9a86-b2c8c025ff2a">
+                    <propertyInstance
+                      Id="567ad249-f2d5-4bfa-a41c-f4920fb9f03b"
+                      name="IsConst"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7d0da09b-f241-4ed4-94ab-825d20c53743">
+                    <propertyInstance
+                      Id="a512523d-ff4b-4d3e-a0ba-30297a331f13"
+                      name="IsNullable"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9306ef6b-ff41-401f-afe9-eeadee8dd08e">
+                    <propertyInstance
+                      Id="21b3a22a-be73-42df-9765-a1a90a6853b7"
+                      name="IsVolatile"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5c8a2e80-61c0-40a8-9a10-cbd29d625bdf">
+                    <propertyInstance
+                      Id="ec88b490-9e99-426f-b945-93be482a93fe"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <type_NamedElement>
+              <classMoniker
+                Id="ea6c2817-ac4b-46f7-b28d-763452b9a49f"
+                LastKnownName="GameboardModel"
+                LastKnownLocation="Package1_1651.uml" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="093dfd3d-ad9c-4247-858e-3f188ad59bb7"
+            name="ConsoleView"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="0718c750-f49c-49d2-a7de-1cc6047f3549"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DConsoleView Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DGameboardModel)])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="22ce29b3-c790-41fa-b56f-98a26ed6e015"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cf17afe1-b157-49a3-a85c-48613efe09cb">
+                    <propertyInstance
+                      Id="a4acd249-2f7e-4b19-940a-dd0fe379b0da"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="dd4f52fe-058c-43b6-9ee1-05f5b033226a">
+                    <propertyInstance
+                      Id="2e16de47-2a79-4dbd-acc8-7bd46c33257b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="e1976b0b-9fd3-497e-8f0f-aaf122a136c7">
+                    <propertyInstance
+                      Id="769f6d29-c1a5-4af2-9ffb-040163fea8b3"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1a7cf157-9b5b-4e17-854f-69fcd4f22e73">
+                    <propertyInstance
+                      Id="fce4cdb8-653f-4c11-bd1c-0a4112e91957"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="7f7f21b7-1f1b-44b3-a4d9-94db98789adc">
+                    <propertyInstance
+                      Id="73b137a5-f1a0-46ac-974c-057e4b8ec428"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="36b2a207-31f7-4e7c-932e-4c0f58307ee9">
+                    <propertyInstance
+                      Id="9554e1c0-9e68-4d90-b937-e4b97749a6be"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="39179310-7251-47ba-bc3f-97561c14e8af"
+                  name="gameboard"
+                  direction="In">
+                  <referencesInternal>
+                    <reference
+                      Id="0b797c24-477f-4e5d-b2c8-50543d75d99a"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DConsoleView Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DGameboardModel)]) ParameterIdentifier%3Dgameboard"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <type_NamedElement>
+                    <classMoniker
+                      Id="ea6c2817-ac4b-46f7-b28d-763452b9a49f"
+                      LastKnownName="GameboardModel"
+                      LastKnownLocation="Package1_1651.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="30567917-85a1-49e2-95a4-eaa0bc0ecde1"
+            name="DisplayWelcomeScreen"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b131c8be-7557-4a08-8db8-793d0d4c1def"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DConsoleView Member%3DDisplayWelcomeScreen"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="0839de55-49b0-4467-80b2-7655236db7f8"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d66d853b-a33d-4933-9d47-ee2e03c70155">
+                    <propertyInstance
+                      Id="f6476cf5-827f-4ae0-a03c-7f0163a1fca8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="64f2daa3-2d85-4291-b7f6-a0dcacb3a579">
+                    <propertyInstance
+                      Id="aa50650b-b3a2-479c-84aa-10f17ce276b4"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="d9e048aa-2496-4a5b-9976-fe11c0ad868e">
+                    <propertyInstance
+                      Id="552f5ba5-7b83-47de-9347-75a8d08f3efa"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2854103e-b7ee-499b-a4e9-63138ff83645">
+                    <propertyInstance
+                      Id="8cc3e7c6-6103-4fb0-a892-052c60843a98"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="fe15b94e-07b3-4c9b-8ddf-d5b28e17a8d5">
+                    <propertyInstance
+                      Id="aca163b7-b63e-4ef5-ac97-c50dda234b57"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="15e1bb8a-6cdc-42ed-8cca-a37e97cc7316">
+                    <propertyInstance
+                      Id="f2fb2333-084d-416c-8ec7-43b51cec1845"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="270138ce-ed41-4ce0-a5db-1cd916213cba"
+            name="DisplayGameArea"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="776c510b-3204-4f71-ae20-c32b87b179dc"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DConsoleView Member%3DDisplayGameArea"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="c374c4cf-32d7-46db-84aa-af9fc609e924"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f7b9cc38-3bd4-4bbc-8beb-dd7468458746">
+                    <propertyInstance
+                      Id="f3429528-8f13-4b7e-b3a9-f6c126a027a8"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f8a52959-f217-4814-9097-b2f8bf16e53d">
+                    <propertyInstance
+                      Id="9ad6b3d8-3fa0-4e7e-b2ed-433d514f5498"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c9410d66-183b-464a-adf1-8028f26514e4">
+                    <propertyInstance
+                      Id="afa8b7cb-88c5-44ac-acb0-b5ad211987b2"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="62cb2566-db42-4a4b-8268-f24ae3b3a196">
+                    <propertyInstance
+                      Id="deb88a92-9083-4c23-bdcb-609016b9573e"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e711219-f54e-4f26-8472-024fb33c4d02">
+                    <propertyInstance
+                      Id="02075f04-8136-46b9-8be1-b79f26acfbd7"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="85b01e45-417e-4bf1-9a81-7074beddf565">
+                    <propertyInstance
+                      Id="15d35e1f-c276-4a7e-a685-8f36780da133"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="56cdb1e8-cbe8-4283-aa61-c22f518bc00c"
+            name="GetPlayerRowChoice"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="90a8afb2-623a-4482-9767-88c4a301e4af"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DConsoleView Member%3DGetPlayerRowChoice"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f71e301f-b71a-49ce-9ae4-c551e4732137"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="763a6b2a-1ba0-4c9a-a0b4-71f1100ceca9">
+                    <propertyInstance
+                      Id="23e8a77d-9d33-4fdc-ab75-38cbad82e177"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="69aafce3-9737-4c84-bdb2-0699241bf33b">
+                    <propertyInstance
+                      Id="2dbd620f-bd0e-4fbd-9f09-bd29c6a1dec3"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8fca45a9-0ff5-45d3-8852-399286078476">
+                    <propertyInstance
+                      Id="3643da4f-de67-4f94-8ae2-67ede453bc52"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5cfa69ac-7cec-44e3-a5c1-1e8d98c8dfad">
+                    <propertyInstance
+                      Id="81039c85-9056-471f-b337-d054ff14a522"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="51a7334e-0dab-4555-803a-9fd7530ebbef">
+                    <propertyInstance
+                      Id="47c6d3cb-3d3e-44d2-8bcb-0f48289c9bfa"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="11f6b610-2ebe-4385-b47e-14898bd40da5">
+                    <propertyInstance
+                      Id="cf6426d7-8d18-41e8-ae76-50d4dc8aef65"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="ef3e0593-9285-472f-a404-76eba91624f0"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectExample.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="d27e7212-849f-4224-98f5-4f91b4d8b76d"
+            name="GetPlayerColChoice"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="6c91f570-1f49-4fed-be28-a35febc12628"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DConsoleView Member%3DGetPlayerColChoice"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="8ff6a1fe-5148-4320-a710-7fda4e88f669"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="47bf3da3-08db-47b8-bedd-f84f1c4e3316">
+                    <propertyInstance
+                      Id="23648763-4bb8-42dd-ae3b-f5e063b072a7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="79f083bd-19a6-4000-ba62-0d6f4c1d991f">
+                    <propertyInstance
+                      Id="2bfb187e-d268-4f21-b23d-92e51bc13340"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="a425d489-d2fb-405b-a5e9-ccd5957cf60b">
+                    <propertyInstance
+                      Id="fdd2ab58-4009-4be9-996a-401d30993a05"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="22ad0d7e-340d-4f5a-aeb3-78bde4d1003c">
+                    <propertyInstance
+                      Id="c74a5c9d-b1fe-436c-a40b-0cc3429c90c8"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="f41b7fcb-1d0f-4f13-b937-ba858b2293af">
+                    <propertyInstance
+                      Id="ecac07c9-c23c-4214-8a20-10ebba9fd1c5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="386b3a21-8708-4afc-a829-49f5068e23f8">
+                    <propertyInstance
+                      Id="70bcab8c-921f-4e95-bf75-97d153d4cea6"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="fbb4d3d2-ae8b-4f65-9237-5589b7c19da0"
+                  direction="Return">
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="220a3521-e091-4221-bae9-3ef9018e845c"
+                      LastKnownName="Integer"
+                      LastKnownLocation="ModelingProjectExample.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="87ab64c1-5310-4a49-b12a-ba482b557f63"
+            name="DisplayGameHeader"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="93a63b70-69db-43e1-a2bd-df1ad02b3aa2"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DConsoleView Member%3DDisplayGameHeader"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="ee333bd8-ca3d-4a98-9e08-edaaee23be9d"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="9b7819c5-30ee-4832-b7d1-c5d8db4bffe0">
+                    <propertyInstance
+                      Id="c5dd87ee-2b2d-47df-bde5-f888df5478d7"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="78f4445f-5025-43ee-a243-3dc0b6fe6725">
+                    <propertyInstance
+                      Id="f0ab1b51-e96b-45a2-8b9b-252d3e50fd7b"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="376a9fe5-44d6-43a6-9572-8910d5b05e67">
+                    <propertyInstance
+                      Id="b877850c-7f15-4526-84e7-eb05ba83aa63"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="715ac6dc-0039-4562-a126-abec885816a7">
+                    <propertyInstance
+                      Id="df370d68-31d6-45d7-885d-ad67fad480b9"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8fd9b180-cf90-41b4-a31d-943341aef8c9">
+                    <propertyInstance
+                      Id="0d5ef842-a01d-429c-9620-da5f877fd48e"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1910df83-c549-452e-b7a6-8adee6424594">
+                    <propertyInstance
+                      Id="b2ee69ca-291b-4adc-a2c4-17f32b125906"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="c5619c97-f03b-42f1-9548-fc968bbb7f99"
+            name="DisplayGameStatus"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="7a5e1d4f-8fd3-4222-98c5-341b9c2f6a94"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DConsoleView Member%3DDisplayGameStatus"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="fe8f00c7-87d2-48ef-8ee7-fb29ee34c74e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b432b143-0442-4614-bdb2-ed1eed7a80d1">
+                    <propertyInstance
+                      Id="a76ae501-627c-46a6-b242-e09471290ab3"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="1d613657-a5e2-4975-8699-115580e98b4e">
+                    <propertyInstance
+                      Id="1136e5ea-997d-4e07-8e47-72d90617b56c"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="2e09e478-9e00-4733-807a-b33ab23d51a8">
+                    <propertyInstance
+                      Id="2f19a951-d2ae-4ff4-a414-1f19ae8a6305"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="79fdfd60-b3a1-43df-b36e-c2ed99391013">
+                    <propertyInstance
+                      Id="5f881e16-1c3f-4f61-a4ba-166cfd3df06a"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="132b3a31-91d5-4bdf-bb9d-85e9e52a5816">
+                    <propertyInstance
+                      Id="53c0f4db-e6eb-4ac6-9bd5-d6f67211bb4f"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="64db5dea-9e55-4401-af96-23685b2662b8">
+                    <propertyInstance
+                      Id="42f2c75e-6dc0-4a12-a762-60d4030d760a"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+          <operation
+            Id="4017a762-340b-4363-9292-1a2a957ec9f1"
+            name="DisplayGameboard"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="967e315d-dd39-4339-aa6b-b678354a2c17"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DConsoleView Member%3DDisplayGameboard"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="428ae62f-fe5b-4d18-8e41-2285ae279893"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="5b0c2cd3-5376-4ba7-af29-b5fcd96248ca">
+                    <propertyInstance
+                      Id="d83355d9-c90b-4e8d-b8e0-f6f6bb82c3fe"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="61354ad0-5cf1-47fe-ac46-f05598f5b2d0">
+                    <propertyInstance
+                      Id="547a6ee8-224c-4942-ac47-8d4c0012a5fc"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cab62760-3e99-46e3-b201-aba731b7b47f">
+                    <propertyInstance
+                      Id="3b9fa2cf-97d5-411f-8dbe-aab7bb673a51"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="cc038be7-1ee9-4548-a4a0-1d4743a36009">
+                    <propertyInstance
+                      Id="f30bbfa2-2464-47b3-b784-1a8d4a229a59"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c83a63e6-d427-482c-ba19-733e446f0ef6">
+                    <propertyInstance
+                      Id="e080a526-2238-4332-9a46-68b9a0e9a3a5"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="45e88e1c-23f4-424c-90fa-e3774d43de48">
+                    <propertyInstance
+                      Id="1c1ef62f-7620-4826-b3f4-f233eb7eb60c"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="397bbc5e-0888-41ef-af7e-b7ad1cf71896"
+        name="PlayerPiece"
+        visibility="Private"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="f847c338-cebd-4f3c-a75e-b82e1e7af46a"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3D(Name%3DPlayerPiece ArrayRank%3D2 ParentType%3D(Name%3DPlayerPiece ParentType%3DGameboardModel))"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="e9e25022-5ebb-4bee-829e-55c6abcf38fa"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d4623872-27cc-413c-b9cc-e4a3084b9281">
+                <propertyInstance
+                  Id="81a059f1-8945-449a-9364-7499ed213ad8"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="4b40f33f-994d-42e8-ae22-fed1d4e8249f">
+                <propertyInstance
+                  Id="759194fe-be0f-4697-84dd-cedf8d5dbad1"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="27e8e78f-b09e-4861-a874-d386ab1fef2f">
+                <propertyInstance
+                  Id="56eb69ac-0362-4714-9b5b-e0cf07d7d631"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2de96d10-7399-4205-b432-b8480588231d">
+                <propertyInstance
+                  Id="12a78828-3e1e-4d6e-befa-38ee63cc8bff"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2cf2eae3-ce79-4c41-bd8e-facdb439407a">
+                <propertyInstance
+                  Id="a2f103d8-a100-4629-8ecd-523f47d9737f"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f709e3fb-60d4-4ac7-ba47-3f00ea3cc38b"
+        name="Program"
+        visibility="Package"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="0258eeaa-d125-4bc0-a345-38c56b6a3d63"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DProgram"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="6523c724-2433-4ffb-bcea-235560ef2fb4"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="d8b49938-2dac-49a3-8378-f19690559f64">
+                <propertyInstance
+                  Id="59997e6c-31bb-43ad-8e22-eec38c42eb9e"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="54482528-3631-4c90-a4c0-9386f88294cb">
+                <propertyInstance
+                  Id="34b159ca-90c2-46ac-b603-6df3cafebbce"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3f31cbae-44f0-44d8-8dfa-3106a374602c">
+                <propertyInstance
+                  Id="60bb03d3-7d62-4d4b-af3c-543ad7c7224f"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6e0d7705-941d-4c9c-ad14-97044088bfc6">
+                <propertyInstance
+                  Id="4ca1b5f9-1166-44d4-8246-28c5fcbdae50"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3de93442-ec83-4369-8115-075f6bc4e9db">
+                <propertyInstance
+                  Id="f9971332-8ba5-4dd2-8825-cb296d9240c0"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="695fc51b-ff4a-4684-848b-710f922042bc"
+            name="Main"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="true"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="b16feec5-fe2a-4a2d-aa77-d87d8dc3a9f8"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DProgram Member%3D(Name%3DMain OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))])"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="144dd00e-9e20-487e-9620-0d34c7e89b8e"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="0e7f6bff-e2eb-43ee-a609-87a4b9138f45">
+                    <propertyInstance
+                      Id="c1b8a82d-d7c9-42d1-a10b-e6e9f686f68a"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="135da7f4-827e-466f-bf52-124ce143ed0e">
+                    <propertyInstance
+                      Id="c5e1f5ce-6111-4638-9646-8ddac4c9d64f"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8d0a22a9-a3b6-4427-88b4-c678da24239e">
+                    <propertyInstance
+                      Id="7cf728d0-43c0-4b1a-b787-f86ad9c4efa6"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="edff3a19-2503-4349-8665-c582f750030e">
+                    <propertyInstance
+                      Id="744f996c-f8a8-4dee-8c29-6fd1bcd87f39"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="ac8fc589-3cb8-424c-8123-07622de9c53f">
+                    <propertyInstance
+                      Id="3c85e4fd-c9de-4fb1-baf7-6165b3324eae"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="586b4613-3d81-4c64-83a2-0c862e792f8d">
+                    <propertyInstance
+                      Id="145eab29-80d2-4330-9436-1b290475cb34"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="8a2f1d92-c557-46cc-8cef-d0834b4f9526"
+                  name="args"
+                  direction="In"
+                  isOrdered="true">
+                  <referencesInternal>
+                    <reference
+                      Id="378c0d90-127f-4d7f-81c1-77a0bf4a0601"
+                      handle="viewcode://./CodeSchema_Parameter?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DProgram Member%3D(Name%3DMain OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3D(Name%3DString ArrayRank%3D1 ParentType%3DString))]) ParameterIdentifier%3Dargs"
+                      tag="ViewCode" />
+                  </referencesInternal>
+                  <lowerValueInternal>
+                    <literalString
+                      Id="9d14bbbe-57eb-4ae4-8f98-01f5f9ad6269"
+                      name="Lower"
+                      value="*" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="fc17a77b-c9a0-450d-ab70-c3596b5abded"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                  <type_NamedElement>
+                    <primitiveTypeMoniker
+                      Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+                      LastKnownName="String"
+                      LastKnownLocation="ModelingProjectExample.uml" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="805ac851-251d-4026-9c4c-e5d356888e80"
+            name="Program"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <referencesInternal>
+              <reference
+                Id="071c65fb-28bb-4c58-8fd4-af7b14791016"
+                handle="viewcode://./CodeSchema_Method?Assembly%3D&quot;file:%2F%2F%2FC:%2FUsers%2Fvelisj%2FGoogle Drive%2FNMC%2FCourses%2FCIT195%2FCIT195 - Code Snippets%2FTicTacToe.ConsoleApp%2FTicTacToe.Console%2Fbin%2FDebug%2FTicTacToe.Console.exe&quot; Namespace%3DTicTacToe.ConsoleApp Type%3DProgram Member%3D.ctor"
+                tag="ViewCode" />
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance
+                Id="f402bc0d-fcf4-42b1-9915-f5e7d8b5136a"
+                name="method"
+                profile="CSharpProfile">
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5e7fd06-7461-4b5a-af03-786e92296b8f">
+                    <propertyInstance
+                      Id="cf6cb19c-7346-4904-a574-b774c7fccab5"
+                      name="ClrAttributes" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="b5197298-77e4-4f83-ac00-e109096a29c3">
+                    <propertyInstance
+                      Id="ca929433-b7e3-42ba-aa5b-c9d5f32cc089"
+                      name="IsPartial"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="26289958-a41a-4f60-9414-465b87b8f7c9">
+                    <propertyInstance
+                      Id="fc8a0c5e-b477-44b9-a490-9743cb7ad818"
+                      name="IsUnsafe"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8bc55d37-f5e9-4044-9ad5-21b8ed81964a">
+                    <propertyInstance
+                      Id="61ec7ab3-9898-4dee-a718-f4f5b32ff501"
+                      name="Inheritance"
+                      value="none" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="8c5fa677-a938-4219-9103-227eeda765ff">
+                    <propertyInstance
+                      Id="c15a0789-085e-44e9-aeeb-9138009946e8"
+                      name="PackageVisibility"
+                      value="internal" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances
+                    Id="c38fe9f9-95fe-435a-a225-0e21672816d7">
+                    <propertyInstance
+                      Id="c29758cc-cffc-43b4-b06a-b86c7a88db60"
+                      name="params"
+                      value="false" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>
