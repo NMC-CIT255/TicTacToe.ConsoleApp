@@ -55,12 +55,12 @@ namespace TicTacToe.ConsoleApp
             _gameView.DisplayGameArea();
 
             //
-            // Initilize gameboard status
+            // Initialize gameboard status
             //
             _gameboard.CurrentGameState = Gameboard.GameState.NewGame;
 
             //
-            // Create PlayerPiece and GameboardPosition objexts
+            // Create PlayerPiece and GameboardPosition objects
             //
             Gameboard.PlayerPiece currentPlayerPiece;
             GameboardPosition gameboardPosition = new GameboardPosition();
